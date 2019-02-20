@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dom Example</title>
+</head>
+<body>
+	<h1 id="h1">hello</h1>
+	<h2 id="h2">yash</h2>
+	<h2>solanki</h2>
+	<ul><li>One</li>
+		<li>Two</li>
+		<li>Three</li></ul>
+	<script type="text/javascript">
+		let child = document.body.children;
+		console.log(child);
+
+		let para = document.createElement("h1");
+		let textNode = document.createTextNode("Hello!!! How R U???");
+		para.appendChild(textNode);
+		console.log(para);
+
+		// para.insertBefore( para , list.);
+		 document.body.appendChild(para);
+
+		let list = document.querySelector("ul");
+		console.log( list);
+
+		let listNode = 	document.createElement("h1");
+		let a = list;
+		console.log(a);
+		listNode.appendChild(a);
+		console.log(listNode);
+		document.body.appendChild(listNode);
+
+		// console.log(list.firstChild);
+		// console.log(list.lastChild);
+	</script>
+</body>
+</html>

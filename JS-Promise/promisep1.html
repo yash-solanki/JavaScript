@@ -1,0 +1,36 @@
+<script type="text/javascript">
+	let cleanRoom = function(){
+		return new Promise(function(resolve,reject){
+			resolve('cleaned The Room');
+		});
+	};
+	let removeGarbage = function(msg) {
+		return new Promise(function(resolve,reject){
+			resolve(msg + 'remove Garbage');
+		});
+	};
+	let winIcecream = function(msg){
+		return new Promise(function(resolve,reject){
+			resolve(msg + 'won Icecream');
+		});
+	};	
+	
+	       // normal promise
+	// cleanRoom().then(function(result){
+	// 	return removeGarbage(result);
+	// }).then(function(result){
+	// 	return winIcecream(result);
+	// }).then(function(result){
+	// 	console.log('finished'+result);
+	// })
+
+			// All done at once
+	Promise.all([cleanRoom(),removeGarbage(),winIcecream()]).then(function(){
+		console.log('all finished')
+	});
+
+	// when u want to check one of them is finished
+	Promise.race([cleanRoom(),removeGarbage(),winIcecream()]).then(function(){
+		console.log('one of them is finished')
+	});
+</script>
