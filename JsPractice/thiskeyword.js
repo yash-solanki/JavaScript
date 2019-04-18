@@ -1,6 +1,7 @@
 this.table = 'Window table';
 
 // const cleanTable = function(soap) {
+    // arrow fun use this from outer scope
 //     const innerFun = (_soap) => {
 //     console.log(`cleaning ${this.table} using ${_soap}`);
 //     }
@@ -32,7 +33,7 @@ this.garage = {
 
 class createRoom {
     constructor(name) {
-        this.table = `${name}s table`
+        this.table = `${name}'s table`
     }
     cleanTable(soap) {
         console.log(`cleaning ${this.table} using ${soap}`)
@@ -43,3 +44,4 @@ const yashsRoom = new createRoom('yash');
 const abhaysRoom = new createRoom('abhay');
 
 yashsRoom.cleanTable('some soap');
+abhaysRoom.cleanTable('some soap');

@@ -1,5 +1,11 @@
 // let x =function() {
+//   setTimeout(() => {
+//     console.log('Inside settimeout1');
+//   },0)
 //     console.log('Inside Fun');
+//     setTimeout(() => {
+//       console.log('Inside settimeout2');
+//     },0)
 // }
 // let y = function(callback) {
 //     callback();
@@ -7,6 +13,21 @@
 // }
 // y(x);
 
+// Just experimant with async await
+// let x =async function() {
+//    setTimeout(() => {
+//     console.log('Inside settimeout1');
+//   },0)
+//     console.log('Inside Fun');
+//     await  setTimeout(() => {
+//       console.log('Inside settimeout2');
+//     },0)
+// }
+// let y =  function(callback) {
+//    callback();
+//   console.log('do something');
+// }
+// y(x);
 
 //Without callback
 // function a() {

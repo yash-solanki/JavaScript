@@ -3,10 +3,6 @@
 //       console.log(element);      
 //       });
 
-// const arr = ["Mr. Dog", "Miss. Elephant", "Mrs. Hen"]
-// arr.forEach(function(item){
-//              console.log(arr.concat("Wrestle"))
-//             });
 
 // const me_obj= {
 //     name:"Doomed1993",
